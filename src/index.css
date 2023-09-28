@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
 
 :root {
-  font-family: 'Josefin Sans', sans-serif;
+  /* font-family: 'Josefin Sans', sans-serif; */
+  /* font-family: 'Dosis', arial, sans-serif; */
+  font-family: 'Mulish', sans-serif;
+  letter-spacing: 0.1em;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;

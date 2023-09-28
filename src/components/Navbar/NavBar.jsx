@@ -2,6 +2,7 @@ import './NavBar.css'
 import Logo from '../../assets/MainLogo.png'
 import { Link, animateScroll as scroll } from "react-scroll";
 import { useNavigate, NavLink, useLocation } from 'react-router-dom';
+import { useEffect,useState } from 'react';
 // import { useEffect, useState } from 'react';
 
 export default function NavBar() {
@@ -35,8 +36,26 @@ export default function NavBar() {
        
     // }, [location.pathname]);
 
+    const [scrolled,setScrolled]=useState(false);
+    function handleScroll(){
+        if(window.scrollY>100){
+            // console.log('scrolled')
+            setScrolled(true);
+        }
+        else{
+            setScrolled(false);
+        }
+    }
+
+    useEffect(()=>{
+        window.addEventListener('scroll',handleScroll)
+        return()=>{
+            window.removeEventListener('scroll', handleScroll);
+        }
+    },[])
+
     return (
-        <div id='NavContainer'>
+        <div className={`NavContainer ${scrolled? 'scrolled':''}`}>
             <img src={Logo} id='Logo' alt="Logo"></img>
             <div className='NavComponent'>
                 <Link to='MapsContainer'

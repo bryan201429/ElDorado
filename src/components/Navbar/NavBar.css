@@ -1,6 +1,6 @@
-#NavContainer{
+.NavContainer{
     backdrop-filter: blur(10px);
-    background-color: rgba(20,20,20, 0.65);
+    background-color: rgba(20,20,20, 0.0);
     width: 100vw;
     height: 11vh;
     margin: 0;
@@ -9,9 +9,15 @@
     align-items: center;
     position: fixed;
     z-index: 3;
+    transition:500ms
+}
+.NavContainer.scrolled{
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 8vh;   
 }
  #Logo{
-    height: 100%;
+    height: 120%;
     width: auto;
     margin-right:auto;
     margin-left: 1vw;
@@ -25,7 +31,7 @@
     justify-content: center;
     cursor: pointer;
     font-size: 1.3vw;
-    transition: 0.2s;
+    transition: 0.5s;
     color: white;
 }
 
