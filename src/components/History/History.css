@@ -1,12 +1,14 @@
 .HistoryContainer{
     width: 100vw;
     height: 90vh;
+    position: relative;
 }
 .PastContainer{
     width: 100vw;
     height: 45vh;
     background-color: white;
     display: flex;
+    position: relative;
 }
 .titleContainer{
     width: 30vw;
@@ -34,12 +36,14 @@ text-align: justify;
     width: 100vw;
     height: 45vh;
     display: flex;
+    position: relative;
 }
 .PastContainer2{
     width: 100vw;
     height: 45vh;
     background-color: white;
     display: flex;
+    
 }
 .titleContainer2{
     width: 30vw;
@@ -63,3 +67,5 @@ text-align: justify;
     font-size: 1vw;
     text-align: justify;
     }
+
+    

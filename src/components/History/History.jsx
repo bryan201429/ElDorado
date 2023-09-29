@@ -1,9 +1,46 @@
 import './History.css'
+import { useState,useEffect } from 'react'
+
 export default function History(){
+    const[scrollPosition,setScrollPosition]=useState(0);
+
+    
+
+    useEffect(()=>{
+
+        let slidefromLeft=document.querySelector('.PastContainer');
+        let slideFromRight=document.querySelector('.futureContainer');
+        const handleScroll=()=>{
+            const currentPosition=window.scrollY;
+            setScrollPosition(currentPosition);
+            
+            let desplazamiento= (scrollPosition / 1.2) - 500;
+            if(desplazamiento>=0){
+                desplazamiento=0;
+            }
+            slideFromRight.style.right =desplazamiento+'px'; 
+            slidefromLeft.style.left = desplazamiento+'px';
+        }
+        window.addEventListener('scroll',handleScroll);
+
+        return()=>{
+            window.removeEventListener('scroll',handleScroll);
+        }
+    },[scrollPosition])
+
+    // const pastContainerStyle = {
+    //     left: `${(scrollPosition / 5) - 200}px`
+
+    // };
+
+    // const futureContainerStyle = {
+    //     right: `${(scrollPosition / 5) - 200}px`
+    // };
+
     return(
         <div className="HistoryContainer">
     
-            <div className="PastContainer">
+            <div className="PastContainer" >
                 <div className='titleContainer'>
                     <h1>Nuestra historia ...</h1>
                 </div>
