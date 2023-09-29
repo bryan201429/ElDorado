@@ -1,6 +1,6 @@
 .NavContainer{
     backdrop-filter: blur(10px);
-    background-color: rgba(20,20,20, 0.0);
+    background-color: rgba(20,20,20, 0.3);
     width: 100vw;
     height: 11vh;
     margin: 0;

@@ -38,7 +38,7 @@ export default function NavBar() {
 
     const [scrolled,setScrolled]=useState(false);
     function handleScroll(){
-        if(window.scrollY>100){
+        if(window.scrollY>80){
             // console.log('scrolled')
             setScrolled(true);
         }
