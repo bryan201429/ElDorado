@@ -6,7 +6,18 @@ import { useEffect } from 'react'
 
 export default function Home(){
 
+    useEffect(()=>{
+        const itemToScroll=sessionStorage.getItem('itemToScroll')
+        const elementToScroll = document.getElementById(itemToScroll);
 
+        if(itemToScroll){
+            elementToScroll.scrollIntoView({
+                behavior: 'smooth', // Agrega desplazamiento suave
+                block: 'center',     // Desplaza el elemento al principio de la ventana
+              });
+              sessionStorage.setItem('itemToScroll','');
+        }
+    },[location.pathname])
     return(
         <div id="HomeContainer">
             <Slider classname='Slider'></Slider>

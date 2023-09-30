@@ -21,6 +21,17 @@
     margin: 0;
     margin-right: auto;
 }
+.line{
+    border: none;
+    background-color: rgb(255, 255, 255);
+    width: 100vw;
+    height: 5px;
+    border-radius: 2px;
+    margin-top: 0;
+    padding: 0;
+    /* margin-bottom: 3vh; */
+
+}
 .googleMap{
     width: 90vw;
     height: 75vh;
@@ -34,9 +45,43 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 #map{
-    height: 85vh;
+    height: 75vh;
+    width: auto;
+}
+.ubicationTitle{
+    display: flex;
+    width: 90vw;
+    height: 10vh;
+    /* background-color: red; */
+    justify-content: start;
+    align-items: center;
+        
+}
+#googleIcon{
+    width: auto;
+    height: 75%;
+    /* margin-bottom: 2p    x; */
+    margin-right: 5px;
+}
+.mapaUrbaTitleContainer{
+    display: flex;
+    align-items: center;
+    width: 90vw;
+    height: 5vw;
+    /* background-color: rebeccapurple; */
+    /* margin-top: 1vh; */
+}
+.mapaUrbaTitle{
+    color: white;
+    font-size: 3.5vw;
+    margin: 0;
+    margin-left: 1vw;
+    margin-right: auto;
+}
+.mapIcon{
+    height: 80%;
     width: auto;
 }

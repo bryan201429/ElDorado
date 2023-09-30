@@ -1,5 +1,7 @@
 import './History.css'
 import { useState,useEffect } from 'react'
+import book from '../../assets/book.png'
+import future from '../../assets/future.png'
 
 export default function History(){
     const[scrollPosition,setScrollPosition]=useState(0);
@@ -34,6 +36,7 @@ export default function History(){
     
             <div className="PastContainer" >
                 <div className='titleContainer'>
+                    <img src={book}></img>
                     <h1>Nuestra historia ...</h1>
                 </div>
                 <div className='historyText'>
@@ -48,6 +51,7 @@ export default function History(){
                     </h3>
                 </div>
                 <div className='titleContainer2'>
+                    <img src={future}></img>
                     <h1>... Hacia el futuro</h1>
                 </div>
             </div>
