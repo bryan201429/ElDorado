@@ -1,6 +1,6 @@
 #slider{
     width: 100vw;
-    height: 95vh;
+    height: 96vh;
     background-color: black;
     color: white;
     margin: 0;
@@ -10,7 +10,7 @@
 }
 .sliderImg{
     width: 100vw;
-    height: 95vh;
+    height: 96vh;
 }
 .swiperContainer{
     /* --swiper-pagination-color: var(--swiper-theme-color);

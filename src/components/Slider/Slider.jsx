@@ -11,6 +11,7 @@ import 'swiper/css/mousewheel'
 
 import parque from '../../assets/parque.png'
 import parque2 from '../../assets/parque2.jpg'
+import sachaca from '../../assets/sachaca.jpeg'
 
 export default function Slider(){
 
@@ -40,7 +41,7 @@ export default function Slider(){
                 >
                 <SwiperSlide><img src={parque} className='sliderImg' ></img></SwiperSlide>
                 <SwiperSlide><img src={parque2} className='sliderImg'></img></SwiperSlide>
-                <SwiperSlide><img src={parque} className='sliderImg'></img></SwiperSlide>
+                <SwiperSlide><img src={sachaca} className='sliderImg'></img></SwiperSlide>
                 <SwiperSlide><img src={parque2} className='sliderImg'></img></SwiperSlide>
                 
             </Swiper>

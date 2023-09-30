@@ -4,12 +4,12 @@ import { useState,useEffect } from 'react'
 export default function History(){
     const[scrollPosition,setScrollPosition]=useState(0);
 
-    
 
     useEffect(()=>{
 
         let slidefromLeft=document.querySelector('.PastContainer');
         let slideFromRight=document.querySelector('.futureContainer');
+
         const handleScroll=()=>{
             const currentPosition=window.scrollY;
             setScrollPosition(currentPosition);
@@ -28,14 +28,6 @@ export default function History(){
         }
     },[scrollPosition])
 
-    // const pastContainerStyle = {
-    //     left: `${(scrollPosition / 5) - 200}px`
-
-    // };
-
-    // const futureContainerStyle = {
-    //     right: `${(scrollPosition / 5) - 200}px`
-    // };
 
     return(
         <div className="HistoryContainer">

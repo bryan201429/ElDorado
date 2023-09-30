@@ -3,6 +3,21 @@
     height: 90vh;
     position: relative;
 }
+.ubicationTitle{
+    display: flex;
+    width: 90vw;
+    height: 10vh;
+    /* background-color: red; */
+    justify-content: start;
+    align-items: center;
+        
+}
+#googleIcon{
+    width: auto;
+    height: 75%;
+    /* margin-bottom: 2p    x; */
+    margin-right: 5px;
+}
 .PastContainer{
     width: 100vw;
     height: 45vh;
