@@ -17,7 +17,7 @@ export default function Home(){
               });
               sessionStorage.setItem('itemToScroll','');
         }
-    },[location.pathname])
+    },[])
     return(
         <div id="HomeContainer">
             <Slider classname='Slider'></Slider>

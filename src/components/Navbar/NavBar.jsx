@@ -69,7 +69,7 @@ export default function NavBar() {
                 </NavLink>
             </div>
             <div className='NavComponent'>
-                <NavLink to='/Services' className='NavComponentLink' activeClassName='active'
+                <NavLink to='/anuncios' className='NavComponentLink' 
                     > ANUNCIOS
                 </NavLink>
             </div>
