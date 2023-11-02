@@ -4,7 +4,8 @@ import advertiseIcon from '../../assets/advertiseIcon.png'
 export default function Anuncios(){
     return(
         <div className="AnunciosContainer">
-            <div className='anuncieContainer'>Anuncie aqui! <img src={advertiseIcon}></img></div>
+            <div className='anuncieContainer'><img src={advertiseIcon} id='advertiseIcon'/> ¡Anuncie aqui! </div>
+            <div className='advertiseContainer'></div>
         </div>
     )
 }
