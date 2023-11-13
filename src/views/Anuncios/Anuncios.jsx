@@ -1,6 +1,6 @@
 import './Anuncios.css'
 import advertiseIcon from '../../assets/advertiseIcon.png'
-
+/* Develop Anouncements */
 export default function Anuncios(){
     return(
         <div className="AnunciosContainer">
