@@ -1,6 +1,7 @@
 import './Anuncios.css'
 import advertiseIcon from '../../assets/advertiseIcon.png'
 /* Develop Anouncements */
+/*Falta poner anuncios*/
 export default function Anuncios(){
     return(
         <div className="AnunciosContainer">
@@ -8,4 +9,4 @@ export default function Anuncios(){
             <div className='advertiseContainer'></div>
         </div>
     )
-}
+}   
